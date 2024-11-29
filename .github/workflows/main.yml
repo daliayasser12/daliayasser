@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-     - master
+      - master
 
 
 
@@ -11,10 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
-     -name: 'Testing github actions'
-      run: pwd
+      - name: 'Testing GitHub Actions'
+        run: pwd
 
-      -name: 'testing printing'
-       run: echo dalia
+      - name: 'Testing printing'
+        run: echo "dalia"
