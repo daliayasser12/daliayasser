@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 'Testing GitHub Actions'
-        run: pwd
+      - name: 'Before'
+        run: ls
 
-      - name: 'Testing printing'
-        run: echo "dalia"
+      - uses: actions/checkout@v3
+
+      - name: 'After'
+        run: ls
